@@ -53,6 +53,7 @@ export default hopeTheme({
       repoId: "R_kgDOLJ2zvA",
       category: "Announcements",
       categoryId: "DIC_kwDOLJ2zvM4CcxIF",
+      // lazyLoading: false
     },
 
     components: {

@@ -322,8 +322,46 @@ encrypt: {
   },
 ```
 
+### 启用评论功能
+
+#### [Giscus](https://plugin-comment2.vuejs.press/zh/guide/giscus.html)
+
+1. 你需要创建一个公开仓库，并开启评论区，以作为评论存放的地点，转到代码库Settings -> 在Features部分下 -> 勾选Discussions框。
+
+![Pages](./images/7.jpg)
+
+2. 接下来，在你的代码库中安装giscus应用程序。
+![Pages](./images/5.jpg)
+![Pages](./images/6.jpg)
+![Pages](./images/8.jpg)
+
+```
+https://github.com/apps/giscus
+```
+3. 进入giscus主页，进行配置，需要从Settings->GitHub Apps 打开
+![Pages](./images/9.jpg)
+4. 在你的GitHub 代码库上的讨论页面创建一个类别——比如 "Comments（评论）"——或者选择现有的类别。
 
 
+#### [搜索](https://theme-hope.vuejs.press/zh/guide/feature/search.html)
+
+
+```
+import { defineUserConfig } from "vuepress";
+import { hopeTheme } from "vuepress-theme-hope";
+
+export default defineUserConfig({
+  theme: hopeTheme({
+    plugins: {
+      searchPro: true,
+      // searchPro: {
+      //   插件选项
+      // },
+    },
+  }),
+});
+
+```
 
 
 
