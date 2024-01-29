@@ -258,6 +258,70 @@ git push -u origin main
 
 注意：您可以通过私下发布来限制对GitHub Pages网站的访问。私人发布的网站只能由对发布网站的存储库具有读取权限的人访问。您可以使用私人发布的网站与企业成员共享内部文档或知识库。
 
+### [主题配置](https://v2.vuepress.vuejs.org/zh/reference/default-theme/config.html#navbar)
+
+- hostname 仅限 Root
+
+```
+    它应该包含完整协议 (如: https://example.com)。
+```
+- author
+
+```
+    interface AuthorInfo {
+      /**
+       * 作者姓名
+       */
+      name: string;
+    
+      /**
+       * 作者网站
+       */
+      url?: string;
+    
+      /**
+       * 作者 Email
+       */
+      email?: string;
+    }
+```
+- logo
+
+```
+    logo: "https://img2.baidu.com/it/u=2617064008,4198815855&fm=253&fmt=auto&app=138&f=JPEG?w=501&h=500"
+```
+- repo 项目仓库的 URL
+```
+    // 如果你按照 `organization/repository` 的格式设置它
+    // 我们会将它作为一个 GitHub 仓库
+    repo: 'vuejs/vuepress',
+    // 你也可以直接将它设置为一个 URL
+    repo: 'https://gitlab.com/foo/bar',
+```
+- docsDir 
+
+```
+文档源文件存放在仓库中的目录名。
+
+它将会用于生成 编辑此页 的链接。
+```
+
+- displayFooter
+
+```
+是否默认显示页脚
+```
+
+- 加密配置
+ 
+```
+encrypt: {
+    config: {
+      "/demo/encrypt.html": ["1234"],
+    },
+  },
+```
+
 
 
 
