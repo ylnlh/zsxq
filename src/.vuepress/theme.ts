@@ -3,18 +3,18 @@ import navbar from "./navbar.js";
 import sidebar from "./sidebar.js";
 
 export default hopeTheme({
-  hostname: "https://vuepress-theme-hope-docs-demo.netlify.app",
+  hostname: "https://ylnlh.github.io/zsxq/",
 
   author: {
-    name: "Mr.Hope",
-    url: "https://mister-hope.com",
+    name: "Mr.Yang",
+    url: "https://ylnlh.github.io/zsxq/",
   },
 
   iconAssets: "fontawesome-with-brands",
 
-  logo: "https://theme-hope-assets.vuejs.press/logo.svg",
+  logo: "https://img2.baidu.com/it/u=2617064008,4198815855&fm=253&fmt=auto&app=138&f=JPEG?w=501&h=500",
 
-  repo: "vuepress-theme-hope/vuepress-theme-hope",
+  repo: "https://github.com/ylnlh/zsxq.git",
 
   docsDir: "src",
 
@@ -45,13 +45,14 @@ export default hopeTheme({
 
   // 在这里配置主题提供的插件
   plugins: {
+    searchPro: true,
     // 你应该自行生成自己的评论服务
     comment: {
       provider: "Giscus",
-      repo: "vuepress-theme-hope/giscus-discussions",
-      repoId: "R_kgDOG_Pt2A",
+      repo: "ylnlh/zsxq",
+      repoId: "R_kgDOLJ2zvA",
       category: "Announcements",
-      categoryId: "DIC_kwDOG_Pt2M4COD69",
+      categoryId: "DIC_kwDOLJ2zvM4CcxIF",
     },
 
     components: {
