@@ -47,13 +47,17 @@ export default hopeTheme({
   plugins: {
     searchPro: true,
     // 你应该自行生成自己的评论服务
+    // comment: {
+    //   provider: "Giscus",
+    //   repo: "ylnlh/zsxq",
+    //   repoId: "R_kgDOLJ2zvA",
+    //   category: "Announcements",
+    //   categoryId: "DIC_kwDOLJ2zvM4CcxIF",
+    //   // lazyLoading: false
+    // },
     comment: {
-      provider: "Giscus",
-      repo: "ylnlh/zsxq",
-      repoId: "R_kgDOLJ2zvA",
-      category: "Announcements",
-      categoryId: "DIC_kwDOLJ2zvM4CcxIF",
-      // lazyLoading: false
+      provider: "Waline",
+      serverURL: "https://walinezsxq.vercel.app/"
     },
 
     components: {

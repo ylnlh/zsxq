@@ -8,6 +8,9 @@ devDependencies:
   '@vuepress/client':
     specifier: 2.0.0-rc.0
     version: 2.0.0-rc.0
+  '@waline/client':
+    specifier: 3.0.0-alpha.11
+    version: 3.0.0-alpha.11
   vue:
     specifier: ^3.4.15
     version: 3.4.15
@@ -16,13 +19,13 @@ devDependencies:
     version: 2.0.0-rc.0(@vuepress/client@2.0.0-rc.0)(vue@3.4.15)
   vuepress-plugin-comment2:
     specifier: 2.0.0-rc.16
-    version: 2.0.0-rc.16(vuepress@2.0.0-rc.0)
+    version: 2.0.0-rc.16(@waline/client@3.0.0-alpha.11)(vuepress@2.0.0-rc.0)
   vuepress-plugin-search-pro:
-    specifier: ^2.0.0-beta.206
+    specifier: 2.0.0-rc.16
     version: 2.0.0-rc.16(vuepress@2.0.0-rc.0)
   vuepress-theme-hope:
     specifier: 2.0.0-rc.13
-    version: 2.0.0-rc.13(markdown-it@13.0.2)(vuepress-plugin-search-pro@2.0.0-rc.16)(vuepress@2.0.0-rc.0)
+    version: 2.0.0-rc.13(@waline/client@3.0.0-alpha.11)(markdown-it@13.0.2)(vuepress-plugin-search-pro@2.0.0-rc.16)(vuepress@2.0.0-rc.0)
 
 packages:
 
@@ -1234,6 +1237,27 @@ packages:
       - vue
     dev: true
 
+  /@waline/api@1.0.0-alpha.5:
+    resolution: {integrity: sha512-jGBvBF4YjVRJExpkf4XaPDh3ES0mgXZxuDmMCuerqB0H6t77HuIEA+YE80UwJ/GSQpvA9ELQlNyoXHANsUmqFQ==, tarball: https://registry.npmjs.org/@waline/api/-/api-1.0.0-alpha.5.tgz}
+    engines: {node: '>=18'}
+    dev: true
+
+  /@waline/client@3.0.0-alpha.11:
+    resolution: {integrity: sha512-HXv+PGcaojFEX5n3UChituGT9xmVUZLzvs94r7YOpuB2pFJyNXF/UnqD3UqocU46Kxpy/H1TKhd3W6MiJU90wQ==, tarball: https://registry.npmjs.org/@waline/client/-/client-3.0.0-alpha.11.tgz}
+    engines: {node: '>=18'}
+    dependencies:
+      '@vueuse/core': 10.7.2(vue@3.4.15)
+      '@waline/api': 1.0.0-alpha.5
+      autosize: 6.0.1
+      marked: 11.2.0
+      marked-highlight: 2.1.0(marked@11.2.0)
+      recaptcha-v3: 1.10.0
+      vue: 3.4.15
+    transitivePeerDependencies:
+      - '@vue/composition-api'
+      - typescript
+    dev: true
+
   /ansi-regex@5.0.1:
     resolution: {integrity: sha512-quJQXlTSUGL2LH9SUXo8VwsY4soanhgo6LNSm84E1LBcE8s3O0wpdiRzyR9z/ZZJMlMWv37qOOb9pdJlMUEKFQ==, tarball: https://registry.npmjs.org/ansi-regex/-/ansi-regex-5.0.1.tgz}
     engines: {node: '>=8'}
@@ -1287,6 +1311,10 @@ packages:
       picocolors: 1.0.0
       postcss: 8.4.33
       postcss-value-parser: 4.2.0
+    dev: true
+
+  /autosize@6.0.1:
+    resolution: {integrity: sha512-f86EjiUKE6Xvczc4ioP1JBlWG7FKrE13qe/DxBCpe8GCipCq2nFw73aO8QEBKHfSbYGDN5eB9jXWKen7tspDqQ==, tarball: https://registry.npmjs.org/autosize/-/autosize-6.0.1.tgz}
     dev: true
 
   /balloon-css@1.2.0:
@@ -1939,6 +1967,20 @@ packages:
       uc.micro: 1.0.6
     dev: true
 
+  /marked-highlight@2.1.0(marked@11.2.0):
+    resolution: {integrity: sha512-peBvgGZZqUw074Vy/N8Y7/6JQhSnR54/T0Ozq2/fAIBzcYfVfExFdQJptIhQxreR1elpwvJRrqhp6S/Prk8prA==, tarball: https://registry.npmjs.org/marked-highlight/-/marked-highlight-2.1.0.tgz}
+    peerDependencies:
+      marked: '>=4 <12'
+    dependencies:
+      marked: 11.2.0
+    dev: true
+
+  /marked@11.2.0:
+    resolution: {integrity: sha512-HR0m3bvu0jAPYiIvLUUQtdg1g6D247//lvcekpHO1WMvbwDlwSkZAX9Lw4F4YHE1T0HaaNve0tuAWuV1UJ6vtw==, tarball: https://registry.npmjs.org/marked/-/marked-11.2.0.tgz}
+    engines: {node: '>= 18'}
+    hasBin: true
+    dev: true
+
   /mdurl@1.0.1:
     resolution: {integrity: sha512-/sKlQJCBYVY9Ers9hqzKou4H6V5UWc/M59TH2dvkt+84itfnq7uFOMLpOiOS4ujvHP4etln18fmIxA5R5fll0g==, tarball: https://registry.npmjs.org/mdurl/-/mdurl-1.0.1.tgz}
     dev: true
@@ -2175,6 +2217,10 @@ packages:
     engines: {node: '>=8.10.0'}
     dependencies:
       picomatch: 2.3.1
+    dev: true
+
+  /recaptcha-v3@1.10.0:
+    resolution: {integrity: sha512-aGTxYSk3FFNKnXeKDbLpgRDRyIHRZNBF5HyaXXAN1Aj4TSyyZvmoAn9CylvpqLV3pYpIQavwc+2rzhNFn5SsLQ==, tarball: https://registry.npmjs.org/recaptcha-v3/-/recaptcha-v3-1.10.0.tgz}
     dev: true
 
   /require-directory@2.1.1:
@@ -2574,7 +2620,7 @@ packages:
       - typescript
     dev: true
 
-  /vuepress-plugin-comment2@2.0.0-rc.13(vuepress@2.0.0-rc.0):
+  /vuepress-plugin-comment2@2.0.0-rc.13(@waline/client@3.0.0-alpha.11)(vuepress@2.0.0-rc.0):
     resolution: {integrity: sha512-elyMGQR0pyWSmJhg5pOXbJEp7Bj28EBy7+8EqgNjQbR4s9ZcUPybpNJ7JOlV8qAIYXSbRWoXODd4zxZcGbiWVA==, tarball: https://registry.npmjs.org/vuepress-plugin-comment2/-/vuepress-plugin-comment2-2.0.0-rc.13.tgz}
     engines: {node: '>=18.16.0', npm: '>=8', pnpm: '>=7', yarn: '>=2'}
     peerDependencies:
@@ -2604,6 +2650,7 @@ packages:
       '@vuepress/client': 2.0.0-rc.0
       '@vuepress/shared': 2.0.0-rc.0
       '@vuepress/utils': 2.0.0-rc.0
+      '@waline/client': 3.0.0-alpha.11
       giscus: 1.4.0
       vue: 3.4.15
       vue-router: 4.2.5(vue@3.4.15)
@@ -2616,7 +2663,7 @@ packages:
       - typescript
     dev: true
 
-  /vuepress-plugin-comment2@2.0.0-rc.16(vuepress@2.0.0-rc.0):
+  /vuepress-plugin-comment2@2.0.0-rc.16(@waline/client@3.0.0-alpha.11)(vuepress@2.0.0-rc.0):
     resolution: {integrity: sha512-uZD31oDfEPNrJYG2tuxHI8g3HBVLlbOtiOoZljs9RGCaKqup+MLsSIBNKg/P2uzLkfKybVIUZaTvAEH+QazYeg==, tarball: https://registry.npmjs.org/vuepress-plugin-comment2/-/vuepress-plugin-comment2-2.0.0-rc.16.tgz}
     engines: {node: '>=18.16.0', npm: '>=8', pnpm: '>=7', yarn: '>=2'}
     peerDependencies:
@@ -2635,6 +2682,7 @@ packages:
       twikoo:
         optional: true
     dependencies:
+      '@waline/client': 3.0.0-alpha.11
       giscus: 1.4.0
       vue: 3.4.15
       vue-router: 4.2.5(vue@3.4.15)
@@ -3132,7 +3180,7 @@ packages:
       - typescript
     dev: true
 
-  /vuepress-theme-hope@2.0.0-rc.13(markdown-it@13.0.2)(vuepress-plugin-search-pro@2.0.0-rc.16)(vuepress@2.0.0-rc.0):
+  /vuepress-theme-hope@2.0.0-rc.13(@waline/client@3.0.0-alpha.11)(markdown-it@13.0.2)(vuepress-plugin-search-pro@2.0.0-rc.16)(vuepress@2.0.0-rc.0):
     resolution: {integrity: sha512-EC7M+BzomiascBExk4mnzihgj7TPuV/AZRURw4Tv6g1WEAMnEHSWSsvJV9TxapfUKILaqhF8cH2tBaZ1PQuIlg==, tarball: https://registry.npmjs.org/vuepress-theme-hope/-/vuepress-theme-hope-2.0.0-rc.13.tgz}
     engines: {node: '>=18.16.0', npm: '>=8', pnpm: '>=7', yarn: '>=2'}
     peerDependencies:
@@ -3193,7 +3241,7 @@ packages:
       vuepress: 2.0.0-rc.0(@vuepress/client@2.0.0-rc.0)(vue@3.4.15)
       vuepress-plugin-auto-catalog: 2.0.0-rc.13(vuepress@2.0.0-rc.0)
       vuepress-plugin-blog2: 2.0.0-rc.13(vuepress@2.0.0-rc.0)
-      vuepress-plugin-comment2: 2.0.0-rc.13(vuepress@2.0.0-rc.0)
+      vuepress-plugin-comment2: 2.0.0-rc.13(@waline/client@3.0.0-alpha.11)(vuepress@2.0.0-rc.0)
       vuepress-plugin-components: 2.0.0-rc.13(vuepress@2.0.0-rc.0)
       vuepress-plugin-copy-code2: 2.0.0-rc.13(vuepress@2.0.0-rc.0)
       vuepress-plugin-copyright2: 2.0.0-rc.13(vuepress@2.0.0-rc.0)
