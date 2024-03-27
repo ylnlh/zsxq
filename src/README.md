@@ -1,17 +1,18 @@
 ---
 home: true
 icon: home
-title: 项目主页
-heroImage: /logo.png
+title: 首页
+heroImage: http://crmcdndev.xinchengyue.com/xcres/deco/default/eaf31f64d052497fa83eafff823df6a0.jpg
 heroText: 学习吧
 tagline: 定期分享探索成果
 actions:
-  - text: 使用指南 💡
-    link: /zh/demo/
+  - text: 前端 💡
+    link: /pages/front-end/
     type: primary
 
-  - text: 文档
-    link: /zh/guide/
+  - text: 后端 💡
+    link: /pages/server/
+    type: primary
 
 ### 技术社区
 

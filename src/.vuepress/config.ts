@@ -13,8 +13,8 @@ export default defineUserConfig({
 
 
   lang: "zh-CN",
-  title: "文档演示",
-  description: "vuepress-theme-hope 的文档演示",
+  title: "blog",
+  description: "博客文档",
   plugins: [
     // commentPlugin({
     //   provider: "Giscus",

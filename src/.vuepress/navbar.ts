@@ -5,12 +5,12 @@ export default navbar([
   // { text: "案例", icon: "discover", link: "/zh/demo/" },
   {
     text: "前端",
-    icon: "creative",
+    icon: "HTML",
     prefix: "/pages/front-end/",
     children: [
       {
         text: "html",
-        icon: "creative",
+        icon: "HTML",
         link: "html/01/01-前言WEB标准.html"
       },
       {
@@ -20,22 +20,22 @@ export default navbar([
       },
       {
         text: "js基础",
-        icon: "javascript",
+        icon: "js",
         link: "js基础/01-JavaScript基础.html"
       },
       {
         text: "js进阶",
-        icon: "es6",
+        icon: "js",
         link: "js进阶/01-JavaScript进阶.html"
       },
       {
         text: "JQ",
-        icon: "javascript",
+        icon: "jq",
         link: "JQ/01-jQuery.html"
       },
       {
         text: "webapi",
-        icon: "javascript",
+        icon: "WebAPI",
         link: "webapi/01-webapis.html"
       },
       {
@@ -45,36 +45,45 @@ export default navbar([
       },
       {
         text: "h5cs",
-        icon: "html",
+        icon: "css",
         link: "h5c3/01-html5css3.html"
       },
       {
         text: "框架",
-        icon: "config",
+        icon: "uniapp",
         prefix: "框架/",
         children: [
           { text: "vue2", icon: "vue", link: "vue2/01-vue.html" },
-          { text: "微信小程序", icon: "mini-app", link: "微信小程序/01-小程序基础.html" },
+          { text: "微信小程序", icon: "weixinxiaochengxu", link: "微信小程序/01-小程序基础.html" },
           { text: "react", icon: "react", link: "react/01-react入门.html" },
+          { text: "uniapp", icon: "uniapp", link: "uniapp/01-微信小程序起步.html" },
         ],
-      },
+      }
     ],
   },
   {
     text: "服务端",
-    icon: "page",
+    icon: "nodejs",
     prefix: "/pages/server/",
     children: [
       {
         text: "nodeJs",
-        icon: "nodeJS",
+        icon: "nodejs",
         link: "nodeJs/01-nodeJS基础.html"
       },
       {
-        text: "Foo",
+        text: "php",
         icon: "php",
         link: "php/01-php基础.html"
       },
+    ],
+  },
+  {
+    text: "前端工程化",
+    icon: "webpack",
+    prefix: "/pages/engineering/",
+    children: [
+      { text: "webpack", icon: "webpack", link: "webpack/01-前言基础使用核心概念.html" },
     ],
   },
 ]);

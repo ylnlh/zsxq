@@ -4,24 +4,27 @@ export default sidebar({
   "/": [
     "",
     {
-      icon: "discover",
+      // icon: "HTML",
       text: "前端",
       prefix: "pages/front-end/",
-      // link: "front-end/",
-      collapsible: true,
+      collapsible: false,
       children: "structure",
     },
     {
-      icon: "discover",
       text: "服务端",
       prefix: "pages/server/",
       collapsible: true,
       children: "structure",
     },
     {
-      icon: "discover",
       text: "css预处理语言",
       prefix: "pages/css-language/",
+      collapsible: true,
+      children: "structure",
+    },
+    {
+      text: "前端工程化",
+      prefix: "pages/engineering/",
       collapsible: true,
       children: "structure",
     },

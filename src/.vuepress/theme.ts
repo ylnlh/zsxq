@@ -10,9 +10,13 @@ export default hopeTheme({
     url: "https://ylnlh.github.io/zsxq/",
   },
 
-  iconAssets: "fontawesome-with-brands",
+  iconAssets: [
+    "//at.alicdn.com/t/c/font_4484505_9nuxnmyj22w.css",
+    "fontawesome-with-brands",
+  ],
+  iconPrefix:"iconfont icon-",
 
-  logo: "https://img2.baidu.com/it/u=2617064008,4198815855&fm=253&fmt=auto&app=138&f=JPEG?w=501&h=500",
+  logo: "http://crmcdndev.xinchengyue.com/xcres/deco/default/eaf31f64d052497fa83eafff823df6a0.jpg",
 
   repo: "https://github.com/ylnlh/zsxq.git",
 
