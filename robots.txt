@@ -2,4 +2,4 @@
 User-agent:*
 Disallow:
 
-Sitemap: https://ylnlh.github.io/zsxq/sitemap.xml
+Sitemap: https://ylnlh.github.io/zsxq/zsxq/sitemap.xml
